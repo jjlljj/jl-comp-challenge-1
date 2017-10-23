@@ -1,10 +1,13 @@
 * {
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .flex-wrapper {
   display: flex;
   flex-wrap: wrap;
+  min-width: 280px;
 }
 
 .tile-container {
@@ -14,66 +17,154 @@
 
 .flex-tile {
   position: relative;
-  text-align: center;
+  min-height: 200px;
   width: 33.33333%;
   height: 33.33333%;
 }
 
 .flex-double-tile {
   position: relative;
-  text-align: center;
+  min-height: 200px;
   width: 66.666666%;
   height: 33.333333%
 }
 
 #portrait-container {
+  position: relative;
   width: 40%;
+  display: flex;
+  justify-content: right;
+  overflow: hidden;
 }
+
+.main-image {
+  height: 60vh;
+  margin-left: -35%;
+  min-height: 420px;
+  height: 100vh;
+}
+
+.arrow-left {
+  font-size: 2em;
+  opacity: .6;
+  position: absolute;
+  left: 14px;
+  top: 48%;
+}
+
+.arrow-right {
+  font-size: 2em;
+  opacity: .6;
+  position: absolute;
+  right: 14px;
+  top: 48%;
+}
+
+.img-slider-icons {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+.slider-circle {
+  margin: 0px 2px;
+  opacity: .3;
+}
+
+.this-slide-circle {
+  opacity: .6;
+}
+
 
 #portrait-mobile-container {
     display: none
 }
+ /*name tile*/
 
-/*.content {
-  position: absolute;
+.name-tile-content {
+  text-align: left;
+  margin: 10% 6%;
+}
+
+.name-tile-button {
+  border: solid 2px white;
+  border-radius: 0px;
+  background-color: transparent;
+  position: relative;
+  font-size: .6em;
+  margin-right: 10px;
+  width: 90px;
+  height: 32px;
+}
+
+.button-icon {
+  fill: white;
+  width: 1.2em;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+p {
+  font-weight: 300;
+  line-height: 22px;
+  margin: 14px 0px;
+}
+
+h4 {
+  margin-top: 10px;
+  font-size: .9em;
+}
+
+
+.content-icon {
+  margin: auto;
+  border: none;
+  width: 4em;
+  height: 4em;
+  background: url(../images/coffee-cup-icon.svg) no-repeat;
+}
+
+.content {
+  margin-top: 30%;
   width: 100%;
-  height: 100%;
-  font-size: 2em;
-  padding-top: 20%;
-}*/
-
+  text-align: center;
+}
 
 
 /* colorrrrssss */
+.orange {
+  background-color: #ff9a00
+}
 
 .red {
-  background-color: #FF5300;
+  background-color: #F15B49;
 }
+
 .green {
-  background-color: #00AB6F;
+  background-color: #00c577;
 }
+
 .blue {
-  background-color:#0C5AA6;
-}
-.yellow {
-  background-color: #FF9700;
-}
-.grey {
-  background-color: grey;
-}
-.purple {
-  background-color: purple;
+  background-color: #008aca;
 }
 
 
 /* media stuffs */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
+  .main-image {
+    height: 60vh;
+    margin: 0;
+  }
   #portrait-mobile-container {
-    display: flex;
+    display: block;
     height: 60vh;
     min-height: 250px;
+    justify-content: right;
+    overflow: hidden;
   }
 
   #portrait-container {
