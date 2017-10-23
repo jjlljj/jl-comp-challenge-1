@@ -32,16 +32,11 @@
 #portrait-container {
   position: relative;
   width: 40%;
-  display: flex;
-  justify-content: right;
-  overflow: hidden;
-}
-
-.main-image {
-  height: 60vh;
-  margin-left: -35%;
-  min-height: 420px;
-  height: 100vh;
+  /*display: flex;*/
+  overflow-x: hidden;
+  background: url(../images/portrait.jpg) no-repeat;
+  background-size: cover ;
+  background-position: center;
 }
 
 .arrow-left {
@@ -117,6 +112,11 @@ h4 {
   font-size: .9em;
 }
 
+ .content {
+    margin: 30% auto 0px;
+    text-align: center;
+  }
+
 
 .content-icon {
   margin: auto;
@@ -124,12 +124,6 @@ h4 {
   width: 4em;
   height: 4em;
   background: url(../images/coffee-cup-icon.svg) no-repeat;
-}
-
-.content {
-  margin-top: 30%;
-  width: 100%;
-  text-align: center;
 }
 
 
@@ -163,8 +157,11 @@ h4 {
     display: block;
     height: 60vh;
     min-height: 250px;
-    justify-content: right;
-    overflow: hidden;
+    overflow-x: hidden;
+    background: url(../images/portrait.jpg) no-repeat;
+    background-size: cover ;
+    background-position: center;
+  
   }
 
   #portrait-container {
