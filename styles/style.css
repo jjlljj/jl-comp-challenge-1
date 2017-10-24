@@ -23,6 +23,10 @@ button {
   outline: none;
 }
 
+button i {
+  margin-right: 4px;
+}
+
 /* desktop flex wrapper */
 
 .flex-wrapper {
@@ -39,13 +43,23 @@ button {
 }
 
 .flex-tile {
+  align-items: center;
+  display: flex;
   height: 33.33333%;
+  justify-content: center;
   min-height: 200px;
   position: relative;
   width: 33.33333%;
 }
 
+.flex-tile:hover {
+  opacity: .95;
+}
+
 .flex-double-tile {
+  display: flex;
+  align-items: center;
+  justify-content: left;
   height: 33.333333%;
   min-height: 200px;
   position: relative;
@@ -55,7 +69,6 @@ button {
 /* tile content */
 
 .content {
-  margin: 11vh auto 0px;
   text-align: center;
 }
 
@@ -106,7 +119,7 @@ button {
 
 .name-tile-content {
   text-align: left;
-  margin: 7vh 6%;
+  margin: 0 6%;
 }
 
 .name-tile-button {
@@ -119,7 +132,6 @@ button {
   position: relative;
   width: 120px;
 }
-
 
 /* portrait section*/
 
@@ -237,7 +249,7 @@ button {
   }
 
   .name-tile-content {
-  margin: 11vh 6%;
+    margin: 0 6%;
 }
 
   .header-tile {
