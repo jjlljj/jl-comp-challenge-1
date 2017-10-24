@@ -8,7 +8,7 @@ Original Comp:
 
 My rendering:
 
-![Alt text](images/static-comp-challenge-jl.png?raw=true "Original Comp")
+![Alt text](images/static-comp-challenge-jl.png "Original Comp")
 
 to see a live version visit:
 
