@@ -4,101 +4,8 @@
   font-weight: 400;
 }
 
-.flex-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 280px;
-}
-
-.tile-container {
-  height: 100vh;
-  width: 60%;
-}
-
-.flex-tile {
-  position: relative;
-  min-height: 200px;
-  width: 33.33333%;
-  height: 33.33333%;
-}
-
-.flex-double-tile {
-  position: relative;
-  min-height: 200px;
-  width: 66.666666%;
-  height: 33.333333%
-}
-
-#portrait-container {
-  position: relative;
-  width: 40%;
-  /*display: flex;*/
-  overflow-x: hidden;
-  background: url(../images/portrait.jpg) no-repeat;
-  background-size: cover ;
-  background-position: center;
-}
-
-.arrow-left {
-  font-size: 2em;
-  opacity: .6;
-  position: absolute;
-  left: 14px;
-  top: 48%;
-}
-
-.arrow-right {
-  font-size: 2em;
-  opacity: .6;
-  position: absolute;
-  right: 14px;
-  top: 48%;
-}
-
-.img-slider-icons {
-  position: absolute;
-  top: 10px;
-  right: 14px;
-}
-
-.slider-circle {
-  margin: 0px 2px;
-  opacity: .3;
-}
-
-.this-slide-circle {
-  opacity: .6;
-}
-
-
-#portrait-mobile-container {
-    display: none
-}
- /*name tile*/
-
-.name-tile-content {
-  text-align: left;
-  margin: 10% 6%;
-}
-
-.name-tile-button {
-  border: solid 2px white;
-  border-radius: 0px;
-  background-color: transparent;
-  position: relative;
-  font-size: .6em;
-  margin-right: 10px;
-  width: 90px;
-  height: 32px;
-}
-
-.button-icon {
-  fill: white;
-  width: 1.2em;
-}
-
 h1 {
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 p {
@@ -112,24 +19,163 @@ h4 {
   font-size: .9em;
 }
 
- .content {
-    margin: 30% auto 0px;
-    text-align: center;
-  }
+button {
+  outline: none;
+}
 
+/* desktop flex wrapper */
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 280px;
+}
+
+/* tile section */
+
+.tile-container {
+  height: 100vh;
+  width: 60%;
+}
+
+.flex-tile {
+  height: 33.33333%;
+  min-height: 200px;
+  position: relative;
+  width: 33.33333%;
+}
+
+.flex-double-tile {
+  height: 33.333333%;
+  min-height: 200px;
+  position: relative;
+  width: 66.666666%;
+}
+
+/* tile content */
+
+.content {
+  margin: 30% auto 0px;
+  text-align: center;
+}
+
+#idea {
+  background: url('../images/lightbulb-icon.svg') no-repeat;
+}
+
+#education {
+  background: url('../images/education-icon.svg') no-repeat;
+}
+
+#food {
+  background-position: center;
+  background-size: cover ;
+  background: url('../images/bowl-icon.png') no-repeat;
+}
+
+#squirrel {
+  background-position: center;
+  background-size: cover ;
+  background: url('../images/acorns-icon.png') no-repeat;
+}
+
+#outside {
+  background: url(../images/mountains-icon.svg) no-repeat;
+}
+
+#contact{
+  background-position: center;
+  background-size: cover ;
+  background: url('../images/whistle.png') no-repeat;
+}
+
+#chew {
+  background-position: center;
+  background-size: cover ;
+  background: url('../images/dog-bone.png') no-repeat;
+}
 
 .content-icon {
-  margin: auto;
   border: none;
-  width: 4em;
   height: 4em;
-  background: url(../images/coffee-cup-icon.svg) no-repeat;
+  margin: auto;
+  width: 4em;
+}
+
+/* name tile */
+
+.name-tile-content {
+  text-align: left;
+  margin: 10% 6%;
+}
+
+.name-tile-button {
+  background-color: transparent;
+  border-radius: 0px;
+  border: solid 2px white;
+  font-size: .8em;
+  height: 40px;
+  margin-right: 10px;
+  position: relative;
+  width: 120px;
 }
 
 
-/* colorrrrssss */
+/* portrait section*/
+
+#portrait-container {
+  background-position: center;
+  background-size: cover ;
+  background: url(../images/portrait.jpg) no-repeat;
+  min-height: 600px;
+  overflow-x: hidden;
+  position: relative;
+  width: 40%;
+}
+
+.arrow-left {
+  font-size: 2em;
+  left: 14px;
+  opacity: .6;
+  position: absolute;
+  top: 48%;
+}
+
+.arrow-right {
+  font-size: 2em;
+  opacity: .6;
+  position: absolute;
+  right: 14px;
+  top: 48%;
+}
+
+.img-slider-icons {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+
+.slider-circle {
+  margin: 0px 2px;
+  opacity: .3;
+}
+
+.this-slide-circle {
+  opacity: .6;
+}
+
+
+#portrait-mobile-container {
+  display: none
+}
+
+/* colors */
 .orange {
-  background-color: #ff9a00
+  background-color: #ff9a00;
+}
+
+.dark-orange {
+  background-color: #F86925;
 }
 
 .red {
@@ -144,24 +190,27 @@ h4 {
   background-color: #008aca;
 }
 
-
 /* media stuffs */
 
 @media screen and (max-width: 800px) {
+
+  p {
+    margin: 16px 0;
+  }
 
   .main-image {
     height: 60vh;
     margin: 0;
   }
+
   #portrait-mobile-container {
+    background-position: center;
+    background-size: cover ;
+    background: url(../images/portrait.jpg) no-repeat;
     display: block;
     height: 60vh;
     min-height: 250px;
     overflow-x: hidden;
-    background: url(../images/portrait.jpg) no-repeat;
-    background-size: cover ;
-    background-position: center;
-  
   }
 
   #portrait-container {
@@ -177,14 +226,17 @@ h4 {
   }
 
   .flex-tile {
-    width: 50%;
     min-height: 120px;
+    width: 50%;
   }
 
   .flex-double-tile {
-    width: 100%;
     height: 40%;
     min-height: 120px;
+    width: 100%;
   }
 
+  .header-tile {
+    min-height: 230px;
+  }
 }

@@ -6,6 +6,7 @@ Original Comp:
 
 ![Alt text](images/static-comp-challenge-comp.jpg?raw=true "Original Comp")
 
+![Alt text](images/static-comp-challenge-jl.png?raw=true "Original Comp")
 
 ## Built with:
 
