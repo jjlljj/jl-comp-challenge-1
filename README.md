@@ -8,7 +8,8 @@ Original Comp:
 
 My rendering:
 
-![Alt text](images/static-comp-challenge-jl.png "Original Comp")
+![static-comp-challenge-jl](https://user-images.githubusercontent.com/16650066/31957756-ff3ee4fc-b8ac-11e7-9223-1404b39e2d82.png "JL Comp")
+
 
 to see a live version visit:
 
