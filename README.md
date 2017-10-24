@@ -6,7 +6,13 @@ Original Comp:
 
 ![Alt text](images/static-comp-challenge-comp.jpg?raw=true "Original Comp")
 
+My rendering:
+
 ![Alt text](images/static-comp-challenge-jl.png?raw=true "Original Comp")
+
+to see a live version visit:
+
+https://jjlljj.github.io/jl-comp-challenge-1/
 
 ## Built with:
 
