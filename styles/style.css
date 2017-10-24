@@ -68,15 +68,15 @@ button {
 }
 
 #food {
-  background-position: center;
-  background-size: cover ;
   background: url('../images/bowl-icon.png') no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #squirrel {
-  background-position: center;
-  background-size: cover ;
   background: url('../images/acorns-icon.png') no-repeat;
+  background-position: center;
+  background-size: cover; 
 }
 
 #outside {
@@ -84,15 +84,15 @@ button {
 }
 
 #contact{
+  background: url('../images/whistle.png') no-repeat;
   background-position: center;
   background-size: cover ;
-  background: url('../images/whistle.png') no-repeat;
 }
 
 #chew {
-  background-position: center;
-  background-size: cover ;
   background: url('../images/dog-bone.png') no-repeat;
+  background-position: center;
+  background-size: cover ; 
 }
 
 .content-icon {
@@ -124,9 +124,9 @@ button {
 /* portrait section*/
 
 #portrait-container {
+  background: url(../images/portrait.jpg) no-repeat;
   background-position: center;
   background-size: cover ;
-  background: url(../images/portrait.jpg) no-repeat;
   min-height: 600px;
   overflow-x: hidden;
   position: relative;
@@ -204,9 +204,9 @@ button {
   }
 
   #portrait-mobile-container {
+    background: url(../images/portrait.jpg) no-repeat;
     background-position: center;
     background-size: cover ;
-    background: url(../images/portrait.jpg) no-repeat;
     display: block;
     height: 60vh;
     min-height: 250px;
